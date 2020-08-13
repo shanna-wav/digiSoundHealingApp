@@ -38,9 +38,14 @@ As sound healing emerges as a secondary facet of music therapy, I consider a res
 ### *Files Included*
 
 -	README.md
-- 	digiSoundHealingApp.zip
+- 	digiSoundHealingApp.maxproj
+-  digiSoundHealingApp.maxpat
+-  poly.maxpat
+-  data and media folders for Max project
 -  sectionI.png - sectionVI.png
 -  figurei.png - figurev.png
+
+***The stand-alone application is offered on Google Drive. See title or installation for link.***
 
 ## Section II: Gong
 

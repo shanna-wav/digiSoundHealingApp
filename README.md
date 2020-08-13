@@ -12,7 +12,8 @@
 	Section V: Tuning Fork
 	Section VI: Crystal Bowl
 	Section VII: Research Question
-	Section VIII: Acknowledgements
+	Section VIII: Limitations
+	Section IX: Acknowledgements
 	Appendix A: Max Patches
 
 ## Section I: Introduction
@@ -124,19 +125,49 @@ To create this instrument, I analyzed some samples of crystal bowls of different
 - B) **Scrape initialize and level**: Click on the button designated "scrape" to initiate a subtle scraping sound of a bowl. Move the small triangle next to the fader below the corresponding bowl to adjust the level of the scraping sound. To stop the scraping, click on its button again, and it will release. 
 - C) **Strike initialize and level**: Click on any of the last five colored buttons to initiate a striking of the bowl, which increases in pitch as you move further right. Move the small triangle next to the fader below the corresponding bowl to adjust the level of the strike. 
 
-## Section VII: Research Question
+## Section VII: Research Proposal
 
-### *Background*
+### *Research Question* 
 
-### *Hypothesis*
+I am curious to learn about how the physical and mental impact of sound therapy differs between digital and analog instruments. While research behind sound and music therapy continues to develop and proves to have many health benefits, it would be great if instruments used in sound and music therapy techniques were more accessible by being digitized so that anyone working in this field can use these instruments. The research question I want to propose is: **How does the neurological activity of auditory engagement differ between digital and analog sound healing instruments?** While brain activity for music is not localized to one region in the brain, I would like to consider activity in the primary auditory cortex in the temporal lobe related to phase and timbre perception.
 
-### *Materials*
+### *Methodology*
 
-### *Procedure*
+#### Materials
+
+- Digital Sound Healing App
+- Physical instruments mimicked in the app
+- Loudspeaker system
+- Headphone system
+- EEG machine
+- Written questionnaire
+
+#### Participants
+
+- male and female adults ages 27-35
+- non-musicians (no training or self taught for less than five years)
+- none to little experience with yoga, vinyasa or restorative
+- none to little experience with sound healing
+
+#### Procedure
+
+I think an effective procedure would be to create four different scenarios for restorative yoga classes followed by individual testing of participants. In these yoga classes, some participants will take a class with an analog sound healing instrument performance, some will take a class with a digital sound healing instrument performance, some will take a class with music playing through the system, and some will take a class with no music or sound besides the verbal instruction. Each class will be held in the same studio with the same yoga teacher. Mats and props will be provided, and students will be asked to adhere to a general dress code to minimize discomfort. Following each of the four classes, the participants will take a questionnare that asks general questions about how their experience was taking the class, as well as more specific questions relating to how the sonic component of the class made them feel. For the individual testing, I propose that participants each listen to thirty second excerpts of the five sound healing instruments in the application as well as the physical versions of those instruments. In this experiment, participants will not be informed about which kind of instrument they are listening to. The EEG machine will be used to monitor their engagement level between each of the exerpts. The particpants will then go through the excerpts again, this time marking down if they think the instrument is digital or analog. 
 
 ### *Predicted Results*
 
-## Section VIII: Acknowledgements
+I hypothesize that digital and analog sound healing instruments will show similar neural activity if certain needs are met: the Digital-to-Analog converter is of higher quality, there is proper gain-staging so that digital instruments are not clipping, and issues with DC offset are resolved. This means that at the commercial level, yoga studios that want to invest in digital sound healing instruments will need to consider purchasing a high-end D/A converter or audio interface. Additionally, it is important that gainstages in the application are preset to offer safe levels, while studios with their own sound systems will also need to accurately calibrate the speaker system to ensure that pure tones stay pure. DC offset in Max specifically is a matter of making adjustments to the programming itself. Nonetheless, I think that with these necessities in mind, digital instruments can prove to be an effective back-up, at least, for analog instruments when sound healing can quickly dissipate anxiety or offer muscular relaxation. Additionally, synthesis techniques of amplitude modulation and the use of ADSR envelopes encourage more accurate auditory perception of instrument timbres. 
+
+## Section VIII: Limitations
+
+1. Gong: The gong I have created is currently one size, although changes in the length of ringing and the brightness factor contribute to theoretical changes of its size. I think this gong also needs a more developed envelope that gives a more accurate attack. 
+2. Steel tongue drum: The steel tongue drum uses scale presets, but creating new scales or changing the tuning must be done on the backend. Additionally, the overlapping of the buttons can cause problems when playing the instrument. 
+2. Tibetan bowl: The dial on the tibetan bowl does not play completely accurately to the size of the bowl because while the speed around the dial changes, speeding up the dial does not technically make the modulation occur faster. 
+3. Tuning fork: The Doppler effect that I've created here is fairly week due to time constraints primarily uses pitchshifter~ and lowres~ opcodes to give a sense of movement. This Doppler effect could be developed more using tapin~ adn tapout~. 
+3. Crystal bowl: The crystal bowls are not "playable" like the tibetan bowl, but they offer more compositional options. Nonetheless, the frequencies need to be changed on the backend so that they can function for different parts of the body. 
+
+Note: There are many "next-steps" I'd like to take for this project, with the nearest one being turning this stand-alone application into an iOS application. I have included the source code in this repository for anyone interested in developing or modifying this application further. This requires contacting me and crediting me if any resulting modification is shared. 
+
+## Section IX: Acknowledgements
 
 ### *Resources*
 [An Overview of Sound Healing Practices](https://watermark.silverchair.com/14-1-21.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAArIwggKuBgkqhkiG9w0BBwagggKfMIICmwIBADCCApQGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM98oHaQP3bxi4qV-vAgEQgIICZToPzcOQpew8WrZ__zcetUe6QWsX6kmEsQWJlBPF6q5ERZRkvHamqfU3wfULhQ7sKS0fYjoTcMzs-3ppkxP3-uDLrkyPxun4Tch5QI2LP6l60ms6fQw4O3bOFvMpyaW6r5PYSz9WgtbS0nvJjwrIvt-B6vWH65OHZQk51M5NQy8oBcxO85YNURjaIS2qDReBa_yFbezMrd81NSguHPeknNV7UZu7FprHgfRjfMmbWxciTB2ZyZ5GeWJI0fdC7qVToKYwqI2I8kky5b0l6dKqTiPbVO51qqU6jm8Wj3neqR4ZRIGawo1AmBemvtX66VnxWzbGi5mB45rJeqaF2EP_WDmb-tLjI35vdEKbSkMSXTJ-HKg-mb9nGGxxyFiBenHkJNF7oFv4YL3hm3ah_GR-rlAfUqOUs2cRnQT2vz4aGKpwIDuVyALBNPaJC8QRYczVs2EIsRLmrR1Y9exXSwl3HvNwHDsDFG2H6Hhk6yIv3bkbcCIo7ws30wMxD16HUqQuC7CzZuAS2Jk-234HE0SsKhzsqHnvMSJACJRoEs2Wr3RirRTvZ4Ci3jmjL5l8IF8KNVEkDpV8CpOKTea9bT0WaNcjbon-QiXneTWsWTyQ4tjnrvaB6zOvlkltelTyVF19-XQuz2-Lir7TAUnj7QrlxuVg9kUXwyVFODtLhWSUFREuJtkb7Xc12JG3wLPf-pHP5IHE7gLUWE6PB4GppBii1qyG9Ik7B6dR66i8TOz5X8X5mPB1SRqyAxTHOcUOeR3lYOzvjGL68Lmp3CzkWl1Q2O22D7FMrnpNfznnfHNX5wGLmEqbRTg)
@@ -161,16 +192,34 @@ Notable objects:
 
 ### *(A-ii) Steel Tongue Drum Patch* 
 
+Notable objects:
+
+- "poly~"
+- "coll"
+- "zl.reg"
+
 ![Steel Tongue Drum Patch](figureii.png)
 
 ### *(A-iii) Tibetan Bowl Patch*
+
+- "delay~"
+- "reson~"
+- "dial"
 
 ![Tibetan Bowl Patch](figureiii.png)
 
 ### *(A-iv) Tuning Fork Patch*
 
+- "pictslider"
+- "lores~"
+- "pitchshift~"
+
 ![Tuning Fork patch](figureiv.png)
 
 ### *(A-v) Crystal Bowl Patch*
+
+- "adsr~"
+- "delay"
+- "line~"
 
 ![Crystal Bowl Patch](figurev.png)
